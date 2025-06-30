@@ -3,7 +3,7 @@
 ### Description
 
 This project contains an HTML file (`exo_events.html`) and an associated JavaScript file (`script.js`).  
-It demonstrates various DOM manipulation techniques and interactive functionalities using vanilla JavaScript.
+It demonstrates various DOM manipulation techniques and interactive functionalities using JavaScript.
 
 ---
 ### How to use
