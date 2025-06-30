@@ -25,7 +25,7 @@ It demonstrates various DOM manipulation techniques and interactive functionalit
 #### Functionality 4: Toggle green text (second card)
 - Clicking the "Edit" button on the second card toggles its text color between green and default.
 
-#### 🧪 Functionality 5: Disable Bootstrap
+#### Functionality 5: Disable Bootstrap
 - Double-clicking the navbar disables or re-enables the Bootstrap CSS by toggling the `<link>` tag.
 
 #### Functionality 6: View buttons interaction
