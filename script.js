@@ -119,3 +119,16 @@ graybtn.addEventListener("click",function () {
 
   cardDiv.insertBefore(lastCard, firstCard);
 });
+
+
+// Fonctionnalité 8
+let bluebtn = document.querySelector('.btn-primary');
+
+bluebtn.addEventListener("click", function (event) {
+  event.preventDefault(); 
+
+  const cards = cardDiv.querySelectorAll('.col-md-4');
+  const firstCard = cards[0];
+  cardDiv.appendChild(firstCard); // appenChild place en dernier enfant du parent
+  
+});
