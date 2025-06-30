@@ -46,10 +46,10 @@ editBtnOne.addEventListener("click", function() {
 // Fonctionnalité 4
 
 let editBtnTwo = document.getElementsByClassName("btn")[5] 
-console.log(editBtnOne)
+// console.log(editBtnTwo)
 
 let secondCard = document.getElementsByClassName("col-md-4")[1]
-console.log(CardOne)
+// console.log(secondCard)
 
 editBtnTwo.addEventListener("click", function() {
   
@@ -61,4 +61,24 @@ editBtnTwo.addEventListener("click", function() {
   secondCard.style.color="green";
 });
 
+
+// Fonctionnalité 5
+
+let navbar = document.querySelector('.navbar');
+
+let bootstrapLink = document.querySelector('link[href*="bootstrap"]');
+
+navbar.addEventListener("dblclick", function() {
+  // console.log("Double-clic détecté !");
+  
+  if (bootstrapLink.disabled === false){
+
+  bootstrapLink.disabled = true;
+
+  }else 
+  bootstrapLink.disabled = false;
+});
+
+
+// Fonctionnalité 6
 
