@@ -69,7 +69,7 @@ let navbar = document.querySelector('.navbar');
 let bootstrapLink = document.querySelector('link[href*="bootstrap"]');
 
 navbar.addEventListener("dblclick", function() {
-  // console.log("Double-clic détecté !");
+  // console.log("Double-clic");
   
   if (bootstrapLink.disabled === false){
 
@@ -82,3 +82,23 @@ navbar.addEventListener("dblclick", function() {
 
 // Fonctionnalité 6
 
+const cards = document.getElementsByClassName("col-md-4");
+const btnViews = document.getElementsByClassName("btn-success");
+
+
+for (let i = 0; i < btnViews.length; i++) {
+  let btn = btnViews[i];
+  let card = cards[i];
+  let text = card.querySelector(".card-text");
+  let image = card.querySelector(".card-img-top");
+
+  btn.addEventListener("mouseenter", function () {
+    text.style.display = "none";
+    image.style.width = "20%";
+  });
+
+  btn.addEventListener("mouseleave", function () {
+    text.style.display = "";
+    image.style.width = "";
+  });
+}
