@@ -102,3 +102,20 @@ for (let i = 0; i < btnViews.length; i++) {
     image.style.width = "";
   });
 }
+
+
+// Fonctionnalité 7
+
+let graybtn = document.querySelector(".btn-secondary");
+// console.log(graybtn);
+let cardDiv = document.querySelector(".album .row");
+// console.log(cardDiv);
+
+graybtn.addEventListener("click",function () {
+  const cards = cardDiv.querySelectorAll('.col-md-4');
+
+  const lastCard = cards[cards.length - 1];
+  const firstCard = cards[0];
+
+  cardDiv.insertBefore(lastCard, firstCard);
+});
